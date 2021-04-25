@@ -9,6 +9,10 @@
     }
 }
 
-@import "fonts";
-@import "nullstyle";
-@import "vars";
+@import "nullstyle"; /* Сброс стилей браузера */
+@import "fonts"; /* Подключение шрифтов */
+@import "vars"; /* Переменные */
+
+body {
+    font-family: 'Cuprum';
+}
