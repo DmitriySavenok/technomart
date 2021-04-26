@@ -1,13 +1,5 @@
 @charset "UTF-8";
 
-@font-face {
-  font-family: "Cuprum";
-  font-display: swap;
-  src: url("../fonts/Cuprum.woff") format("woff"), url("../fonts/Cuprum.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
 /*Обнуление*/
 
 * {
@@ -100,11 +92,193 @@ h6 {
 
 /*--------------------*/
 
-body {
-  font-family: 'Cuprum';
+/* Сброс стилей браузера */
+
+@font-face {
+  font-family: "Cuprum";
+  font-display: swap;
+  src: url("../fonts/Cuprum.woff") format("woff"), url("../fonts/Cuprum.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
 }
 
-h1 {
-  font-size: 52px;
-  font-style: italic;
+/* Подключение шрифтов */
+
+/* Переменные */
+
+.menu {
+  background-color: #293449;
+  height: 42px;
+}
+
+.grid-wrap {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto 220px 271px 450px auto;
+}
+
+.logo {
+  grid-column-start: 2;
+  width: 220px;
+  height: 47px;
+  background-color: #EE3643;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 5px solid #8A1F27;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.logo:active {
+  background-color: #BA2732;
+}
+
+.logo-text {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.menu form {
+  grid-column-start: 3;
+}
+
+.search {
+  padding-top: 10px;
+  padding-left: 17px;
+  height: 42px;
+}
+
+.search form {
+  display: inline-block;
+}
+
+.search:hover .search-label {
+  opacity: 100%;
+}
+
+.search-label {
+  font-size: 16px;
+  color: white;
+  opacity: 50%;
+  cursor: pointer;
+}
+
+.search-input {
+  width: 200px;
+  font-size: 18px;
+  margin-left: 9px;
+  padding: 1px 0 1px 0;
+  background: none;
+}
+
+.search-input:-webkit-autofill {
+  -webkit-text-fill-color: inherit !important;
+  -webkit-box-shadow: 0 0 0px 1000px #FFFFFF inset;
+          box-shadow: 0 0 0px 1000px #FFFFFF inset;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.search:focus-within {
+  background-color: white;
+  -webkit-transition-duration: 0.3s;
+       -o-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.search:focus-within .search-label {
+  color: #EE3643;
+}
+
+.search input:active::-webkit-input-placeholder {
+  opacity: 50%;
+}
+
+.search input:active::-moz-placeholder {
+  opacity: 50%;
+}
+
+.search input:active:-ms-input-placeholder {
+  opacity: 50%;
+}
+
+.search input:active::-ms-input-placeholder {
+  opacity: 50%;
+}
+
+.search input:active::placeholder {
+  opacity: 50%;
+}
+
+.search input::-webkit-input-placeholder {
+  font-size: 18px;
+  color: white;
+}
+
+.search input::-moz-placeholder {
+  font-size: 18px;
+  color: white;
+}
+
+.search input:-ms-input-placeholder {
+  font-size: 18px;
+  color: white;
+}
+
+.search input::-ms-input-placeholder {
+  font-size: 18px;
+  color: white;
+}
+
+.search input::placeholder {
+  font-size: 18px;
+  color: white;
+}
+
+.menu-buttons-block {
+  font-size: 0;
+}
+
+.top-menu-button {
+  width: 150px;
+  height: 40px;
+  background-color: #293449;
+  font-size: 18px;
+  color: white;
+}
+
+.top-menu-button:active {
+  background-color: #161D29;
+}
+
+.top-menu-button:hover i {
+  opacity: 100%;
+}
+
+.top-menu-button i {
+  font-size: 15px;
+  opacity: 50%;
+}
+
+.order_button {
+  background-color: #63A63E;
+  width: 150px;
+  height: 42px;
+  font-size: 18px;
+  color: white;
+}
+
+.order_button:hover {
+  background-color: #5FBB2D;
+}
+
+.order_button:active .order_button_text {
+  opacity: 50%;
+}
+
+/* Header */
+
+body {
+  font-family: 'Cuprum', sans-serif;
 }

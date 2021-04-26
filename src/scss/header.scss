@@ -1,0 +1,125 @@
+.menu {
+    background-color: $basic_blue;
+    height: 42px;
+}
+
+.grid-wrap {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto 220px 271px 450px auto;
+}
+
+.logo {
+    grid-column-start: 2;
+    width: 220px;
+    height: 47px;
+    background-color: $basic_red;
+    box-sizing: border-box;
+    border-bottom: 5px solid #8A1F27;
+    text-align: center;
+    padding-top: 10px;
+    &:active {
+        background-color: $active_red;
+    }
+}
+
+.logo-text {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.menu form {
+    grid-column-start: 3;
+}
+
+.search {
+    padding-top: 10px;
+    padding-left: 17px;
+    height: 42px;
+}
+
+.search form {
+   display: inline-block;
+}
+
+.search:hover .search-label {
+    opacity: 100%;
+}
+
+.search-label {
+    font-size: 16px;
+    color:white;
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.search-input {
+    width: 200px;
+    font-size: 18px;
+    margin-left: 9px;
+    padding: 1px 0 1px 0;
+    background: none;
+}
+
+.search-input:-webkit-autofill {
+    -webkit-text-fill-color: inherit !important;
+    box-shadow: 0 0 0px 1000px #FFFFFF inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.search:focus-within {
+    background-color: white;
+    transition-duration: 0.3s;
+}
+
+.search:focus-within .search-label{
+    color: $basic_red;
+}
+
+.search input:active::placeholder {
+    opacity: 50%;
+}
+
+.search input::placeholder {
+    font-size: 18px;
+    color:white;
+}
+
+.menu-buttons-block {
+    font-size: 0;
+}
+
+.top-menu-button {
+    width: 150px;
+    height: 40px;
+    background-color: $basic_blue;
+    font-size: 18px;
+    color:white;
+    &:active {
+        background-color: $active_blue;
+    }
+    &:hover i {
+        opacity: 100%;
+    }
+}
+
+.top-menu-button i {
+    font-size: 15px;
+    opacity: 50%;
+}
+
+.order_button {
+    background-color: $basic_green;
+    width: 150px;
+    height: 42px;
+    font-size: 18px;
+    color:white;
+    &:hover {
+        background-color: $hover_green;
+      }
+
+      &:active .order_button_text {
+        opacity: 50%;
+      }
+}

@@ -12,7 +12,8 @@
 @import "nullstyle"; /* Сброс стилей браузера */
 @import "fonts"; /* Подключение шрифтов */
 @import "vars"; /* Переменные */
+@import "header"; /* Header */
 
 body {
-    font-family: 'Cuprum';
+    font-family: 'Cuprum', sans-serif;
 }
