@@ -1,9 +1,14 @@
+header {
+    height: 320px;
+    background-color: $bg_gray;
+}
+
 .menu {
     background-color: $basic_blue;
     height: 42px;
 }
 
-.grid-wrap {
+.menu-grid-wrap {
     margin: 0 auto;
     display: grid;
     grid-template-columns: auto 220px 271px 450px auto;
@@ -122,4 +127,93 @@
       &:active .order_button_text {
         opacity: 50%;
       }
+}
+
+.header-info {
+    margin-top: 37px;
+}
+
+.header-info-title {
+    width: 197px;
+    margin-left: 30px;
+    margin-right: 92px;
+    display: inline-block;
+
+    font-size: 16px;
+    line-height: 23px;
+    font-style: italic;
+    color: $basic_red;
+}
+
+.header-info-phone {
+    vertical-align: top;
+    display: inline-block;
+}
+
+.phone-info {
+    padding: 9px 42px 9px 42px;
+    margin-bottom: 6px;
+    border: 3px solid white;
+}
+
+.phone-info i {
+    font-size: 19px;
+    color: #B7BFC8;
+    margin-right: 14px;
+}
+
+.phone-info p {
+    font-size: 21px;
+    font-weight: bold;
+
+    display: inline-block;
+
+    color: $basic_red
+}
+
+.address-info {
+    text-align: center;
+    font-size: 14px;
+    color: $text_blue;
+}
+
+.header-registration {
+    vertical-align: top;
+    float: right;
+    height: 70px;
+}
+
+.header-registration button {
+    background-color: white;
+    font-size: 21px;
+    &:hover {
+        color: $basic_red;
+    }
+    &:active {
+        color: $text_gray;
+    }
+}
+
+.login-btn {
+    height: 45px;
+    width: 121px;
+    margin-right: 10px;
+    &:hover i {
+        color: #3D546F;
+      }
+    &:active i {
+        color: $text_gray;
+    }
+
+}
+
+.sign-btn {
+    height: 45px;
+    width: 150px;
+}
+
+.login-btn i {
+    color: $text_gray;
+    font-size: 19px;
+    margin-right: 4px;
 }
