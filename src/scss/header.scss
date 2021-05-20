@@ -175,6 +175,7 @@ header {
     text-align: center;
     font-size: 14px;
     color: $text_blue;
+    margin-bottom: 46px;
 }
 
 .header-registration {
@@ -216,4 +217,32 @@ header {
     color: $text_gray;
     font-size: 19px;
     margin-right: 4px;
+}
+
+.submenu-bg {
+    background-color: $text_blue;
+    height: 60px;
+    border-bottom: 6px solid $basic_blue;
+}
+
+.submenu ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    line-height: 60px;
+}
+
+.submenu li a {
+    font-size: 18px;
+    padding: 19px 28px 19px 28px;
+    font-weight: normal;
+    color: white;
+    &:hover {
+        background-color: #1D2739;
+      }
+
+    &:active{
+        color: #8E939c;
+    }
 }
