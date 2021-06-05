@@ -192,8 +192,12 @@ header {
           transition-duration: 0.3s;
 }
 
-.search:focus-within .search-label {
-  color: #EE3643;
+.search-icon {
+  fill: white;
+}
+
+.search:focus-within .search-icon {
+  fill: #EE3643;
 }
 
 .search input:active::-webkit-input-placeholder {
@@ -245,6 +249,13 @@ header {
   font-size: 0;
 }
 
+.bookmark-icon,
+.cart-icon {
+  fill: white;
+  opacity: 50%;
+  margin-right: 9px;
+}
+
 .top-menu-button {
   width: 150px;
   height: 40px;
@@ -257,13 +268,16 @@ header {
   background-color: #161D29;
 }
 
-.top-menu-button:hover i {
+.top-menu-button:hover .bookmark-icon {
+  opacity: 100%;
+}
+
+.top-menu-button:hover .cart-icon {
   opacity: 100%;
 }
 
 .top-menu-button i {
   font-size: 15px;
-  opacity: 50%;
 }
 
 .order_button {
@@ -353,12 +367,12 @@ header {
   margin-right: 10px;
 }
 
-.login-btn:hover i {
-  color: #3D546F;
+.login-btn:hover .login-icon {
+  fill: #3D546F;
 }
 
-.login-btn:active i {
-  color: #C5C5C5;
+.login-btn:active .login-icon {
+  fill: #C5C5C5;
 }
 
 .sign-btn {
@@ -366,9 +380,8 @@ header {
   width: 150px;
 }
 
-.login-btn i {
-  color: #C5C5C5;
-  font-size: 19px;
+.login-icon {
+  fill: #C5C5C5;
   margin-right: 4px;
 }
 
